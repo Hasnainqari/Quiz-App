@@ -1,0 +1,21 @@
+.detail{
+    font-size: 60px;
+    text-align: center;
+}
+
+.submit{
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+    background-color: #9da8a9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 70%;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+a{
+    text-decoration: none;
+}
