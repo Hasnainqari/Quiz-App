@@ -1,7 +1,7 @@
 
 const quizData = [
     {
-        question: "Qno:1  What Does HTML stands for?",
+        question: "Qno:1  What Does CSS stands for?",
         a: "Hyperlinks and text markup language",
         b: " Hypertext markup language",
         c: "Hyper tools and text markup language",
@@ -9,7 +9,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Qno:2What is the largest heading in HTML?",
+        question: "Qno:2 What is the largest heading in HTML?",
         a: "<heading>",
         b: "<head>",
         c: "<h6>",
@@ -145,3 +145,20 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+var startingMin = 30;
+var time = startingMin * 60;
+
+var countDowne = document.getElementById("timer");
+
+setInterval(updateCountDown, 1000);
+
+function updateCountDown() {
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+
+    // seconds = seconds < 30 ? '0' + seconds : seconds;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countDowne.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}

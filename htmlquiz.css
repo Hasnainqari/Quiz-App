@@ -17,6 +17,14 @@ body{
     overflow: hidden;
     margin: 0;
 }
+.timer{
+    color: #f5f7f7;
+    margin-left: 80%;
+    padding: 3px;
+    text-align: center;
+    background-color: #cc77cf;
+    border-radius: 20px;
+}
 .quizcontainer{
     background-color: #fff;
     ;border-radius: 10px;

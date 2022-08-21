@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Philospher;
+    src: url(./Philosopher-Regular.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(./PlayfairDisplay-VariableFont_wght.ttf);
+}
 body{
     background-color: #bBc6db;
     background-image: linear-gradient(315deg, #bBc6db 0%, #f5f7f7 100%);
@@ -8,6 +16,14 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+.timer{
+    color: #f5f7f7;
+    margin-left: 80%;
+    padding: 3px;
+    text-align: center;
+    background-color: #cc77cf;
+    border-radius: 20px;
 }
 .quizcontainer{
     background-color: #fff;
@@ -20,6 +36,7 @@ body{
     padding: 4rem;
 }
 h2{
+    font-family: PlayfairDisplay;
     padding: 1rem;
     text-align: center;
  
@@ -30,6 +47,7 @@ ul{
     padding: 0;
 }
 ul li {
+    font-family: Philospher;
     font-size: 1.2rem;
     margin: 1rem 0;
 }
@@ -37,7 +55,7 @@ ul li label{
     cursor: pointer;
 }
 button{
-    background-color: #03cae4;
+    background-color: #ec7dfa;
     color: #fff;
     border: none;
     display: block;
@@ -48,5 +66,5 @@ button{
     padding: 1.3rem;
 }
 button:focus{
-    background-color: #04adc4;
+    background-color: #c415ca;
 }
