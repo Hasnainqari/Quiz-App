@@ -5,6 +5,29 @@
 body{
     background-color: #f2d0f7;
 }
+.start {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#exam {
+    text-align: center;border-radius: 10px;
+    box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.1);
+    background-color: #03cae4;
+    color: #000;
+    border: none;
+    display: block;
+    width: 650px;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+.text{
+    font-family: Josefin;
+    text-decoration: none;
+}
 .detail{
     font-family:Josefin ;
     font-size: 60px;
