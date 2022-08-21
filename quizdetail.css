@@ -2,9 +2,11 @@
     font-family: Josefin;
     src: url(./Josefin_Sans/static/JosefinSans-Light.ttf);
 }
-body{
+
+body {
     background-color: #f2d0f7;
 }
+
 .start {
     display: flex;
     justify-content: center;
@@ -12,7 +14,8 @@ body{
 }
 
 #exam {
-    text-align: center;border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.1);
     background-color: #03cae4;
     color: #000;
@@ -24,18 +27,20 @@ body{
     font-family: inherit;
     padding: 1.3rem;
 }
-.text{
+
+.text {
     font-family: Josefin;
     text-decoration: none;
 }
-.detail{
-    font-family:Josefin ;
+
+.detail {
+    font-family: Josefin;
     font-size: 60px;
     text-align: center;
 }
 
-.submit{
-    font-family:Josefin ;
+.submit {
+    font-family: Josefin;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
     background-color: #9da8a9;
     color: #fff;
@@ -49,8 +54,9 @@ body{
     /* font-family: inherit; */
     padding: 1.3rem;
 }
-a{
-    
-    font-family:Josefin ;
+
+a {
+
+    font-family: Josefin;
     text-decoration: none;
 }
