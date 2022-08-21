@@ -145,7 +145,7 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
-var startingMin = 30;
+var startingMin = 20;
 var time = startingMin * 60;
 
 var countDowne = document.getElementById("timer");
