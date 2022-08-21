@@ -1,9 +1,18 @@
+@font-face {
+    font-family: Josefin;
+    src: url(./Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+body{
+    background-color: #f2d0f7;
+}
 .detail{
+    font-family:Josefin ;
     font-size: 60px;
     text-align: center;
 }
 
 .submit{
+    font-family:Josefin ;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
     background-color: #9da8a9;
     color: #fff;
@@ -13,9 +22,12 @@
     width: 70%;
     cursor: pointer;
     font-size: 30px;
-    font-family: inherit;
+    font-weight: 700;
+    /* font-family: inherit; */
     padding: 1.3rem;
 }
 a{
+    
+    font-family:Josefin ;
     text-decoration: none;
 }
