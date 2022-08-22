@@ -14,17 +14,18 @@ body {
 }
 
 #exam {
+    font-family: Josefin;
     text-align: center;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.1);
-    background-color: #03cae4;
+    /* background-color: #a2d8e0; */
     color: #000;
     border: none;
     display: block;
     width: 650px;
     cursor: pointer;
     font-size: 40px;
-    font-family: inherit;
+    /* font-family: inherit; */
     padding: 1.3rem;
 }
 
