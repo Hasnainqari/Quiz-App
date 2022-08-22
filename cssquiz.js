@@ -1,83 +1,83 @@
 
 const quizData = [
     {
-        question: "Qno:1  What Does HTML stands for?",
-        a: "Hyperlinks and text markup language",
-        b: " Hypertext markup language",
-        c: "Hyper tools and text markup language",
-        d: "Home tool markup language",
-        correct: "b",
-    },
-    {
-        question: "Qno:2What is the largest heading in HTML?",
-        a: "<heading>",
-        b: "<head>",
-        c: "<h6>",
-        d: "<h1>",
-        correct: "d",
-    },
-    {
-        question: "Qno:3 What is the smallest heading in HTML?",
-        a: "<heading>",
-        b: "<head> ",
-        c: "<h6>",
-        d: "<h1>",
+        question: "Qno:1  What does CSS stand for?",
+        a: "Colorful Style Sheet",
+        b: "Creative Style Sheet",
+        c: "Cascading Style Sheet",
+        d: "Computing Style sheet",
         correct: "c",
     },
     {
-        question: "Qno:4 What is the correct HTML element for inserting a line break?",
-        a: "<br>",
-        b: "<bar>",
-        c: "<braek>",
-        d: "<lb>",
-        correct: "a",
-    },
-    {
-        question: "Qno:5 What is the correct HTML for adding a background color? ",
-        a: "<body bg= 'yellow'>",
-        b: "color= yellow",
-        c: "<body style ='background-color :yellow;'>",
-        d: "<background>yellow<background>",
-        correct: "a",
-    },
-    {
-        question: " Qno:6 Choose the correct HTML element to define important text?",
-        a: "<b>",
-        b: "<i>",
-        c: "<strong>",
-        d: "<important>",
-        correct: "d",
-    },
-    {
-        question: "Qno:7 Choose the correct HTML element to define emphasized text?",
-        a: "<italic>",
-        b: "<em>",
-        c: "<i>",
-        d: "<b>",
+        question: "Qno:2 What is the correct HTML for referring to an external style sheet?",
+        a: "<stylesheet>mystyle.css</stylesheet>",
+        b: "<link rel='stylesheet' type='text/css'href='mystyle.css'>",
+        c: "<style.src='mystyle.css'/>",
+        d: "style.css",
         correct: "b",
     },
     {
-        question: "Qno:8 What is the correct HTML for creating a hyperlink?",
-        a: "<a url=''>",
-        b: "<a href=''>",
-        c: "<a>",
-        d: "<a https=''>",
-        correct: "b",
-    },
-    {
-        question: "Qno:9 Which character is used to indicate an end tag?",
-        a: "^",
-        b: "*",
-        c: "/",
-        d: "<",
+        question: "Qno:3 Where in an HTML document is the correct place to refer to an external style sheet?",
+        a: "At the end of document",
+        b: "In the <body> section",
+        c: "In the <head> section",
+        d: "In the <title> section",
         correct: "c",
     },
     {
-        question: "Qno:10 Which of these element are all <table> elements?",
-        a: "<table><tr><td>",
-        b: " <td><table><td>",
-        c: "<tr><table><td>",
-        d: "<table>",
+        question: "Qno:4 Which HTML tag is used to define an internal style sheet?",
+        a: "<script>",
+        b: "<css>",
+        c: "<style>",
+        d: "<html>",
+        correct: "c",
+    },
+    {
+        question: "Qno:5 Which HTML attribute is used to define inline styles?",
+        a: "style",
+        b: "class",
+        c: "font",
+        d: "styles",
+        correct: "a",
+    },
+    {
+        question: " Qno:6 Which is the correct CSS syntax?",
+        a: "{body:color=black;}",
+        b: "{body;color:black;}",
+        c: "body{color:black;}",
+        d: "body:color=black;",
+        correct: "d",
+    },
+    {
+        question: "Qno:7 How do you insert a comment in a CSS file?",
+        a: "*/this is a comment*/",
+        b: "//this is a comment",
+        c: "//this is a comment//",
+        d: "``this is a comment``",
+        correct: "a",
+    },
+    {
+        question: "Qno:8 Which property is used to change the background color?",
+        a: "bgcolor",
+        b: "background color",
+        c: "color",
+        d: "lineargradient",
+        correct: "b",
+    },
+    {
+        question: "Qno:9 Which CSS property is used to change the text color of an element?",
+        a: "fgcolor",
+        b: "textcolor",
+        c: "color",
+        d: "fontcolor",
+        correct: "c",
+    },
+    {
+        question: "Qno:10 Which CSS property controls the text size?",
+        a: "font size",
+        b: "text sixe",
+        c: "text style",
+        d: "font style",
         correct: "a",
     },
 ]
@@ -145,3 +145,20 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+var startingMin = 30;
+var time = startingMin * 60;
+
+var countDowne = document.getElementById("timer");
+
+setInterval(updateCountDown, 1000);
+
+function updateCountDown() {
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+
+    // seconds = seconds < 30 ? '0' + seconds : seconds;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countDowne.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}

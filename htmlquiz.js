@@ -145,3 +145,20 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+var startingMin = 20;
+var time = startingMin * 60;
+
+var countDowne = document.getElementById("timer");
+
+setInterval(updateCountDown, 1000);
+
+function updateCountDown() {
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+
+    // seconds = seconds < 30 ? '0' + seconds : seconds;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countDowne.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}

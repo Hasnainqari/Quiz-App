@@ -1,84 +1,84 @@
 
 const quizData = [
     {
-        question: "Qno:1  What Does HTML stands for?",
-        a: "Hyperlinks and text markup language",
-        b: " Hypertext markup language",
-        c: "Hyper tools and text markup language",
-        d: "Home tool markup language",
+        question: "Qno:1  What Does JS stands for?",
+        a: "JavaSript",
+        b: "jascript",
+        c: "jasonscripting",
+        d: "josfein language",
         correct: "b",
     },
     {
-        question: "Qno:2What is the largest heading in HTML?",
-        a: "<heading>",
-        b: "<head>",
-        c: "<h6>",
-        d: "<h1>",
-        correct: "d",
+        question: "Qno:2 Inside which HTML element do we put the JavaScript?",
+        a: "<script>",
+        b: "<scripting>",
+        c: "<js>",
+        d: "<javascript>",
+        correct: "a",
     },
     {
-        question: "Qno:3 What is the smallest heading in HTML?",
-        a: "<heading>",
-        b: "<head> ",
-        c: "<h6>",
-        d: "<h1>",
+        question: "Qno:3 Where is the correct place to insert a JavaScript?",
+        a: "the <head> section",
+        b: "the <body> section",
+        c: "Both a and b",
+        d: "None of them",
+        correct: "b",
+    },
+    {
+        question: "Qno:4 What is the correct syntax for referring to an external script called 'xxx.js'?",
+        a: "<script href = 'xxx.js>'",
+        b: "<script name = 'xxx.js>'",
+        c: "<script src = 'xxx.js>'",
+        d: "<script scr = 'xxx.js>'",
+        correct: "a",
+    },
+    {
+        question: "Qno:5 How do you write 'Hello World' in an alert box?",
+        a: "alert('hello world')",
+        b: "alertbox('hello world')",
+        c: "msg('hello world')",
+        d: "alert(hello world)",
+        correct: "a",
+    },
+    {
+        question: " Qno:6 How do you create a function in JavaScript?",
+        a: "function=myfunction()",
+        b: "function:myfunction()",
+        c: "function myfunction()",
+        d: "myfunction()",
         correct: "c",
     },
     {
-        question: "Qno:4 What is the correct HTML element for inserting a line break?",
-        a: "<br>",
-        b: "<bar>",
-        c: "<braek>",
-        d: "<lb>",
-        correct: "a",
-    },
-    {
-        question: "Qno:5 What is the correct HTML for adding a background color? ",
-        a: "<body bg= 'yellow'>",
-        b: "color= yellow",
-        c: "<body style ='background-color :yellow;'>",
-        d: "<background>yellow<background>",
-        correct: "a",
-    },
-    {
-        question: " Qno:6 Choose the correct HTML element to define important text?",
-        a: "<b>",
-        b: "<i>",
-        c: "<strong>",
-        d: "<important>",
-        correct: "d",
-    },
-    {
-        question: "Qno:7 Choose the correct HTML element to define emphasized text?",
-        a: "<italic>",
-        b: "<em>",
-        c: "<i>",
-        d: "<b>",
+        question: "Qno:7 How do you call a function named 'myFunction'?",
+        a: "call myfunction()",
+        b: "myfunction()",
+        c: "myfuntion(call)",
+        d: "call function myfunction()",
         correct: "b",
     },
     {
-        question: "Qno:8 What is the correct HTML for creating a hyperlink?",
-        a: "<a url=''>",
-        b: "<a href=''>",
-        c: "<a>",
-        d: "<a https=''>",
-        correct: "b",
+        question: "Qno:8 How to write an IF statement in JavaScript?",
+        a: "if(i == 5)",
+        b: "if(i ==== 5)",
+        c: "if(i = 5)",
+        d: "ifi == 5",
+        correct: "a",
     },
     {
-        question: "Qno:9 Which character is used to indicate an end tag?",
-        a: "^",
-        b: "*",
-        c: "/",
-        d: "<",
+        question: "Qno:9 How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+        a: "if(i !== 5)",
+        b: "if(i !==== 5)",
+        c: "if(i != 5)",
+        d: "ifi !== 5",
         correct: "c",
     },
     {
-        question: "Qno:10 Which of these element are all <table> elements?",
-        a: "<table><tr><td>",
-        b: " <td><table><td>",
-        c: "<tr><table><td>",
-        d: "<table>",
-        correct: "a",
+        question: "Qno:10 How can you add a comment in a JavaScript?",
+        a: "/* this is a comment */",
+        b: "this is a commment//",
+        c: "//this is a comment//",
+        d: "// this is a comment",
+        correct: "d",
     },
 ]
 
@@ -145,3 +145,20 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+var startingMin = 50;
+var time = startingMin * 60;
+
+var countDowne = document.getElementById("timer");
+
+setInterval(updateCountDown, 1000);
+
+function updateCountDown() {
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+
+    // seconds = seconds < 30 ? '0' + seconds : seconds;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countDowne.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}
